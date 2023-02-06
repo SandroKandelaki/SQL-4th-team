@@ -1,0 +1,66 @@
+INSERT INTO faculties (faculty_id, name)
+VALUES (1, 'Computer science')
+
+INSERT INTO faculties (faculty_id, name)
+VALUES (2, 'Mathematics')
+
+INSERT INTO faculties (faculty_id, name)
+VALUES (3, 'Architecture')
+
+
+INSERT INTO courses (course_id, name, faculty_id)
+VALUES (1, 'Web development', 1)
+
+INSERT INTO courses (course_id, name, faculty_id)
+VALUES (2, 'Mobile development', 1)
+
+
+INSERT INTO subjects (subject_id, name, course_id)
+VALUES (1, 'Java', 2)
+
+INSERT INTO subjects (subject_id, name, course_id)
+VALUES (2, 'React', 1)
+
+
+INSERT INTO lecturers (lecturer_id, name, last_name, email, account_number, rank)
+VALUES (1, 'Lika', 'Gelashvili', 'lika_gelashvili@gmail.com', 'GE47TB284950053', 'Senior Assistant')
+
+INSERT INTO lecturers (lecturer_id, name, last_name, email, account_number, rank)
+VALUES (1, 'Lasha', 'Kalandia', 'lasha_kalandia@gmail.com', 'GE47TB234595087', 'Junior Assistant')
+
+
+INSERT INTO students (student_id, name, last_name, personal_number, email, address, second_address, apartment_number, date_of_birth, gender)
+VALUES (1, 'Maka', 'Bezhuashvili', '20008839493', 'maka.bezhuashvili@gmail.com', 'city Tbilisi', 'Tbilisi', '', '1996-10-20', 'female')
+
+INSERT INTO students (student_id, name, last_name, personal_number, email, address, second_address, apartment_number, date_of_birth, gender)
+VALUES (2, 'Giorgi', 'Miqeladze', '20004539133', 'giorgi_miqeladze@gmail.com', 'city Tbilisi', '', '', '1998-4-10', 'male')
+
+INSERT INTO students (student_id, name, last_name, personal_number, email, address, second_address, apartment_number, date_of_birth, gender)
+VALUES (3, 'Mari', 'lamazoshvili', '20004535600', 'lamazoshvili@gmail.com', 'city Rustavi', 'Rustavi', '', '1999-7-16', 'female')
+
+
+INSERT INTO lectures (lecture_id, subject_id, lecturer_id, time)
+VALUES (1, 2, 1, '20:30:00')
+
+INSERT INTO lectures (lecture_id, subject_id, lecturer_id, time)
+VALUES (2, 1, 2, '19:30:00')
+
+
+INSERT INTO Attendances (attendance_id, student_id, lecture_id)
+VALUES (1, 3, 2)
+
+INSERT INTO Attendances (attendance_id, student_id, lecture_id)
+VALUES (2, 2, 1)
+
+INSERT INTO Attendances (attendance_id, student_id, lecture_id)
+VALUES (3, 1, 1)
+
+
+INSERT INTO Support_managers (support_manager_id, name, last_name, email)
+VALUES (1, 'Elene', 'Maisuladze', 'maisuradze_elene@gmail.com')
+
+INSERT INTO Support_managers (support_manager_id, name, last_name, email)
+VALUES (2, 'Luka', 'Darchia', 'luka-darchia@gmail.com')
+
+INSERT INTO Support_managers (support_manager_id, name, last_name, email)
+VALUES (3, 'Nika', 'Lomashvili', 'n.lomashvili@gmail.com')
